@@ -1,0 +1,467 @@
+{
+  "summary": {
+    "vector": {
+      "constraint_precision": 0.81,
+      "full_precision": 0.59,
+      "recall": 0.6964912280701755
+    },
+    "hybrid": {
+      "constraint_precision": 1.0,
+      "full_precision": 0.73,
+      "recall": 0.8912280701754386
+    }
+  },
+  "rows": [
+    {
+      "query": "4 bedroom house with a fireplace under $800k",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 5,
+        "constraint_precision": 0.6,
+        "full_precision": 0.6,
+        "recall": 0.6
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 5,
+        "constraint_precision": 1.0,
+        "full_precision": 0.8,
+        "recall": 0.8
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "max_price": 800000,
+        "min_bedrooms": 4,
+        "property_type": "house",
+        "semantic_query": "house with a fireplace"
+      }
+    },
+    {
+      "query": "condo under $500k",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 20,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 20,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "max_price": 500000,
+        "property_type": "condo",
+        "semantic_query": "condo under $500k"
+      }
+    },
+    {
+      "query": "3 bedroom townhouse",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 16,
+        "constraint_precision": 0.8,
+        "full_precision": 0.8,
+        "recall": 0.8
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 16,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "min_bedrooms": 3,
+        "property_type": "townhouse",
+        "semantic_query": "3 bedroom townhouse"
+      }
+    },
+    {
+      "query": "a home with a pool",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 16,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 16,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "semantic_query": "a home with a pool"
+      }
+    },
+    {
+      "query": "house with at least 5 bedrooms",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 19,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 19,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "min_bedrooms": 5,
+        "property_type": "house",
+        "semantic_query": "house with at least 5 bedrooms"
+      }
+    },
+    {
+      "query": "cheap starter home under $350k",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 42,
+        "constraint_precision": 0.8,
+        "full_precision": 0.8,
+        "recall": 0.8
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 42,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "max_price": 350000,
+        "semantic_query": "cheap starter home"
+      }
+    },
+    {
+      "query": "luxury home over $2 million with a pool",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 2,
+        "constraint_precision": 0.8,
+        "full_precision": 0.2,
+        "recall": 0.5
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 2,
+        "constraint_precision": 1.0,
+        "full_precision": 0.4,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "min_price": 2000000,
+        "semantic_query": "luxury home with a pool"
+      }
+    },
+    {
+      "query": "2 bedroom condo with a balcony",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 6,
+        "constraint_precision": 0.6,
+        "full_precision": 0.6,
+        "recall": 0.6
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 6,
+        "constraint_precision": 1.0,
+        "full_precision": 0.8,
+        "recall": 0.8
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "min_bedrooms": 2,
+        "property_type": "condo",
+        "semantic_query": "condo with a balcony"
+      }
+    },
+    {
+      "query": "house with a garage under $600k",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 6,
+        "constraint_precision": 0.6,
+        "full_precision": 0.4,
+        "recall": 0.4
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 6,
+        "constraint_precision": 1.0,
+        "full_precision": 0.4,
+        "recall": 0.4
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "max_price": 600000,
+        "property_type": "house",
+        "semantic_query": "house with a garage"
+      }
+    },
+    {
+      "query": "at least 2 bathrooms and a home office",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 8,
+        "constraint_precision": 1.0,
+        "full_precision": 0.8,
+        "recall": 0.8
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 8,
+        "constraint_precision": 1.0,
+        "full_precision": 0.8,
+        "recall": 0.8
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "min_bathrooms": 2.0,
+        "semantic_query": "home office"
+      }
+    },
+    {
+      "query": "small place under 1000 square feet",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 17,
+        "constraint_precision": 0.6,
+        "full_precision": 0.6,
+        "recall": 0.6
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 17,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "max_size_sqft": 1000,
+        "semantic_query": "small place"
+      }
+    },
+    {
+      "query": "house over 3000 sqft with mountain views",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 2,
+        "constraint_precision": 0.4,
+        "full_precision": 0.0,
+        "recall": 0.0
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 2,
+        "constraint_precision": 1.0,
+        "full_precision": 0.4,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "min_size_sqft": 3000,
+        "property_type": "house",
+        "semantic_query": "mountain views"
+      }
+    },
+    {
+      "query": "townhouse under $450k",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 20,
+        "constraint_precision": 0.6,
+        "full_precision": 0.6,
+        "recall": 0.6
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 20,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "max_price": 450000,
+        "property_type": "townhouse",
+        "semantic_query": "townhouse under $450k"
+      }
+    },
+    {
+      "query": "home with water views",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 3,
+        "constraint_precision": 1.0,
+        "full_precision": 0.4,
+        "recall": 0.6666666666666666
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 3,
+        "constraint_precision": 1.0,
+        "full_precision": 0.4,
+        "recall": 0.6666666666666666
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "semantic_query": "home with water views"
+      }
+    },
+    {
+      "query": "3 bedroom house between $400k and $700k",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 22,
+        "constraint_precision": 0.6,
+        "full_precision": 0.6,
+        "recall": 0.6
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 22,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "min_price": 400000,
+        "max_price": 700000,
+        "min_bedrooms": 3,
+        "property_type": "house",
+        "semantic_query": "3 bedroom house between $400k and $700k"
+      }
+    },
+    {
+      "query": "condo with a gym",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 3,
+        "constraint_precision": 1.0,
+        "full_precision": 0.4,
+        "recall": 0.6666666666666666
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 3,
+        "constraint_precision": 1.0,
+        "full_precision": 0.4,
+        "recall": 0.6666666666666666
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "property_type": "condo",
+        "semantic_query": "condo with a gym"
+      }
+    },
+    {
+      "query": "3+ bedrooms with a big yard for the kids",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 23,
+        "constraint_precision": 1.0,
+        "full_precision": 0.8,
+        "recall": 0.8
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 23,
+        "constraint_precision": 1.0,
+        "full_precision": 0.8,
+        "recall": 0.8
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "min_bedrooms": 3,
+        "semantic_query": "big yard for the kids"
+      }
+    },
+    {
+      "query": "energy-efficient home with solar panels",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 0,
+        "constraint_precision": 1.0,
+        "full_precision": 0.0,
+        "recall": null
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 0,
+        "constraint_precision": 1.0,
+        "full_precision": 0.0,
+        "recall": null
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "semantic_query": "energy-efficient home with solar panels"
+      }
+    },
+    {
+      "query": "1 bedroom condo under $400k",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 18,
+        "constraint_precision": 0.8,
+        "full_precision": 0.8,
+        "recall": 0.8
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 18,
+        "constraint_precision": 1.0,
+        "full_precision": 1.0,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "max_price": 400000,
+        "min_bedrooms": 1,
+        "property_type": "condo",
+        "semantic_query": "1 bedroom condo"
+      }
+    },
+    {
+      "query": "house with a deck and hiking access",
+      "vector": {
+        "n_returned": 5,
+        "n_relevant_total": 2,
+        "constraint_precision": 1.0,
+        "full_precision": 0.4,
+        "recall": 1.0
+      },
+      "hybrid": {
+        "n_returned": 5,
+        "n_relevant_total": 2,
+        "constraint_precision": 1.0,
+        "full_precision": 0.4,
+        "recall": 1.0
+      },
+      "parser_correct": true,
+      "parsed_filters": {
+        "property_type": "house",
+        "semantic_query": "house with a deck and hiking access"
+      }
+    }
+  ]
+}
